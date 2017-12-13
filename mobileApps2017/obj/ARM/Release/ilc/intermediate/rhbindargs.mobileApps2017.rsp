@@ -1,0 +1,16 @@
+/osver:6.2
+/appcontainer
+/runtime:mrt100_app
+/eh:clr
+/pdb
+"/nativeLink:C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.compiler\1.7.2\tools\ARM\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"C:\Users\Dara\source\repos\mobileApps2017\mobileApps2017\obj\ARM\Release\ilc\intermediate\MDIL\mobileApps2017.mdilexe"
+"/i:C:\Users\Dara\source\repos\mobileApps2017\mobileApps2017\obj\ARM\Release\ilc\intermediate\MDIL"
+"/out:C:\Users\Dara\source\repos\mobileApps2017\mobileApps2017\obj\ARM\Release\ilc\intermediate\Native\mobileApps2017.exe"
+"/pdbAltPath:C:\Users\Dara\source\repos\mobileApps2017\mobileApps2017\bin\ARM\Release\ilc"
+"/res:C:\Users\Dara\source\repos\mobileApps2017\mobileApps2017\obj\ARM\Release\ilc\intermediate\Native.res"
+"/i:C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-arm\1.7.0\tools\SharedLibrary\ret\MDIL"
+/shimexe
+"/classlib:SharedLibrary"

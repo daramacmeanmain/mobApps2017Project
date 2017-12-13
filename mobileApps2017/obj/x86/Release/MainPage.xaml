@@ -1,0 +1,76 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="mobileApps2017.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:mobileApps2017"
+    xmlns:viewModels="using:ViewModels"
+    xmlns:converters="using:Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+
+        <converters:ObjectExistsToVisible x:Key="ObjectExistsToVisible" />
+
+    </Page.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource ="/Assets/cinema.png"></ImageBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Orientation="Vertical" RequestedTheme="Dark" >
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="25">
+                <TextBlock FontSize="44" xml:space="preserve">MovieTrackr</TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Orientation="Vertical" RequestedTheme="Dark">
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="25" Background="Black">
+                <TextBlock Text="Title" />
+            </StackPanel>
+            <ListView x:ConnectionId='8'  x:Name="TitleList"                                                                                                                     MinWidth="50" HorizontalAlignment="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate                                        >
+                        <TextBlock x:ConnectionId='10'                                    />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:ConnectionId='9' Content="Add New"                                Margin="5" Background="DarkRed"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Orientation="Vertical" RequestedTheme="Dark">
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="25" Background="Black">
+                <TextBlock Text="Year Released" />
+            </StackPanel>
+            <ListView x:ConnectionId='6'  x:Name="YearList"                                                                                                                    MinWidth="50" HorizontalAlignment="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate                                       >
+                        <TextBlock x:ConnectionId='7'                                   />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+        <StackPanel x:ConnectionId='2' Grid.Column="3" Orientation="Vertical"                                                                                                              RequestedTheme="Dark" >
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="25" Background="Black">
+                <TextBlock Text="New Movie" />
+            </StackPanel>
+            <TextBox x:ConnectionId='3'                                                                              Margin="5" />
+            <TextBox x:ConnectionId='4'                                                                             Margin="5" />
+            <Button x:ConnectionId='5' Content="Delete"                                   Margin="5" Background="DarkRed"/>
+        </StackPanel>
+    </Grid>
+</Page>
+

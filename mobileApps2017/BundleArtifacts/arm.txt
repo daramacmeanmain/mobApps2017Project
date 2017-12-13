@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Dara\source\repos\mobileApps2017\mobileApps2017\bin\ARM\Release\mobileApps2017_1.1.0.0_ARM.appx
+SymbolPackage=C:\Users\Dara\source\repos\mobileApps2017\mobileApps2017\AppPackages\mobileApps2017_1.1.0.0_Test\mobileApps2017_1.1.0.0_ARM.appxsym
